@@ -1,0 +1,24 @@
+.header{
+    padding: 20px 0;
+    width: 100%;
+    height: 70px;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    width: 230px;
+}
+
+.header nav{
+    display: flex;
+    align-items: center;
+    grid-column-gap: 2em;
+}
+
+.header nav a{
+    text-decoration: none;
+    color: #fff;
+}
+

@@ -1,0 +1,44 @@
+.hero{
+    margin-top: 70px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 32px;
+}
+
+.hero .layer-one{
+    display: flex;
+    grid-column-gap: 2em;
+}
+
+.hero .title{
+    width: 100%;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 3.8em;
+    text-transform: uppercase;
+}
+
+.hero .text{
+    width: 80%;
+    color: #F7F7F7;
+    font-size: 1em;
+    line-height: 25px;
+}
+
+.hero .layer-two{
+    display: flex;
+    grid-column-gap: 32px;
+    align-items: center;
+}
+
+.hero .layer-two button{
+    background: #2025EE;
+    border-radius: 2px;
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
