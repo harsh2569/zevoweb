@@ -9,6 +9,11 @@
     font-family: 'GT Regular';
 }
 
+@font-face{
+    src: url(./assets/fonts/LEMONMILK-Regular.otf);
+    font-family: 'Lemon milk Regular';
+}
+
 body{
     font-family: 'GT Regular';
     color: #fff;
@@ -17,4 +22,6 @@ body{
 a{
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
+

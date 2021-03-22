@@ -5,9 +5,11 @@ import '../styles/screens/home.css'
 
 //importing patterns
 import Header from '../patterns/header'
-import Hero from '../patterns/hero'
+import {Hero} from '../patterns/hero'
 import Card from '../patterns/card'
-import Contactus from './contactus'
+import Contact from '../patterns/contact'
+import Footer from '../patterns/footer'
+import ServiceCard from '../patterns/serviceCard'
 
 //importing media assets
 import landing from '../assets/images/home.jpg'
@@ -21,7 +23,17 @@ import map from '../assets/images/map.svg'
 import card1 from '../assets/cards/card1.svg'
 import card2 from '../assets/cards/card2.svg'
 import card3 from '../assets/cards/card3.svg'
-import Footer from '../patterns/footer'
+import left from '../assets/icons/left.svg'
+import right from '../assets/icons/right.svg'
+import mobile from '../assets/cards/mobile.svg'
+import laptop from '../assets/cards/laptop.svg'
+import system from '../assets/cards/system.svg'
+import bot from '../assets/cards/robo.svg'
+import leftarrow from '../assets/icons/leftarrow.svg'
+import frame1 from '../assets/cards/frame1.svg'
+import frame2 from '../assets/cards/frame2.svg'
+import frame3 from '../assets/cards/frame3.svg'
+import frame4 from '../assets/cards/frame4.svg'
 
 const Home = () => {
     return (
@@ -55,8 +67,10 @@ const Home = () => {
                     <span className="span">Have a project idea?  Get in touch</span>
                     <span>Learn More</span>
                 </div>
-                <div>
-                    <img src={map} alt="map" />
+                <div className="block-right">
+                    <div className="map-image">
+                        <img src={map} alt="map" />
+                    </div>
                 </div>
             </div>
 
@@ -89,7 +103,62 @@ const Home = () => {
                 </div>
             </div>
 
-            <Contactus />
+            <div className="work">
+                <p className="block-title">Our Work</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque ipsum et commodo aliquet imperdiet amet. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <button><span>See all works</span><img src={leftarrow} alt="leftarrow" /></button>
+                <div className="block-image-one">
+                    <div>
+                        <img src={frame1} alt="frame1" />
+                    </div>
+                   <div>
+                        <img src={frame2} alt="frame2" />
+                   </div>
+                </div>
+                <div className="block-image-two">
+                     <div>
+                        <img src={frame3} alt="frame3" />
+                    </div>
+                    <div>
+                        <img src={frame4} alt="frame4" />
+                   </div>
+                </div>
+
+            </div>
+
+            <div className="services">
+                <div className="block-header">
+                    <div>
+                        <p className="block-title">Our services would be your best benefit</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                           elit. Malesuada tristique id facilisi metus rhoncus,
+                              nunc est. Cras pulvinar.
+                        </p>
+                    </div>
+                    <div>
+                        <img src={left} alt="left" style={{marginRight:16}} />
+                        <img src={right} alt="right" />
+                    </div>
+                </div>
+                <div className="block-card">
+                    <ServiceCard name="UI & UX Designing"  src={mobile} />
+                    <ServiceCard name="Web Development" src={laptop} type="inverse" />
+                    <ServiceCard name="App Development" src={system} />
+                    <ServiceCard name="Bot Development" src={bot} type="inverse" />
+                </div>
+            </div>
+
+            <div className="slider">
+                <p className="block-title">Trying is Believing</p>
+                <p>See what our clients are saying about our unique and effective formulas.</p>
+            </div>
+
+            <div style={{background:'#000'}}>
+                <Contact />
+            </div>
 
             <Footer />
 

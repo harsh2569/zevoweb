@@ -1,87 +1,20 @@
-.contact{
-    width: 100%;
-    background: #000000;
-    padding: 50px 70px;
+.contactus .contact-header{
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
-.contact li{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    grid-column-gap: 1em;
-    font-size: 1.5em;
-    margin-bottom: 2em;
+@media screen and (max-width:768px){
+    .contactus .contact-header{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
 }
 
-.contact .input-group{
-    font-size: 20px;
-    margin-bottom: 2em;
-}
-
-.contact .input-group input{
-    outline: none;
-    border: none;
-    border-bottom: 1px solid rgba(110, 125, 255, 0.8);
-    background: transparent;
-    margin: 0 10px;
-    font-size: 1em;
-    color: #fff;
-}
-
-.contact .input-group input::placeholder{
-    color: #f7f7f7;
-    opacity: 0.5;
-    font-size: 16px;
-}
-
-.contact .input-group select{
-    outline: none;
-    border: none;
-    border-bottom: 1px solid rgba(110, 125, 255, 0.8);
-    background: transparent;
-    margin: 0 10px;
-    font-size: 16px;
-    color: #f7f7f7;
-    opacity: 0.5;
-}
-
-.contact .block-end{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.contact .block-end div p{
-    font-size: 1.2em;
-    font-weight: 500;
-    margin-bottom: 1em;
-}
-
-.contact .block-end div li{
-    list-style: none;
-    color: #f7f7f7;
-    opacity: 0.5;
-    font-size: 1em;
-    margin: 10px 0;
-}
-.contact .block-end .button .primary{
-    background: #2025EE;
-    border-radius: 2px;
-    padding: 10px 16px;
-    outline: none;
-    border: none;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-    margin-right: 2em;
-}
-
-.contact .block-end .button .secondary{
-    background: transparent;
-    border-radius: 2px;
-    padding: 10px 16px;
-    outline: none;
-    border: 2px solid #ff3737;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
+@media screen and (max-width:576px){
+    .contactus .contact-header{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
 }

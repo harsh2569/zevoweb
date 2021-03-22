@@ -12,6 +12,7 @@
     text-transform: uppercase;
     color: #6E7DFF;
     margin-bottom: 1.3em;
+    font-family: 'Lemon milk Regular';
 }
 
 .card p:nth-child(2){
@@ -24,4 +25,20 @@
     top: -50%;
     right: 6%;
     transform: translateY(50%);
+}
+
+@media screen and (max-width:768px){
+    .card .card-image{
+        top: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width:576px){
+    .card .card-image{
+        top: -25%;
+        right: 5%;
+        transform: translateX(0%);
+    }
 }

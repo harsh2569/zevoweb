@@ -6,6 +6,7 @@
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-family: 'Lemon milk Regular';
 }
 
 .landing{
@@ -65,6 +66,22 @@
     margin-right: 32px;
 }
 
+.home .who-we-are .block-right{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.home .who-we-are .block-right .map-image{
+    width: 100%;
+    height: 100%;
+}
+
+.home .who-we-are .block-right .map-image img{
+    width: 100%;
+}
+
 .home .card-container{
     padding: 100px 70px 0;
     background: #141414;
@@ -74,7 +91,7 @@
 }
 
 .home .experience{
-    padding: 100px 70px;
+    padding: 100px 70px 50px;
     background: #141414;
 }
 
@@ -108,4 +125,189 @@
 
 .home .experience .block > div h1 span{
     color: #6E7DFF;
+}
+
+.home .work{
+    background: #000;
+    padding: 100px 70px 50px;
+}
+
+.home .work p:nth-child(1),
+.home .work p:nth-child(2){
+    text-align: center;
+}
+
+.home .work p:nth-child(2){
+    margin: 2em auto 0;
+    font-size: 1em;
+    color: #F7F7F7;
+    width: 60%;
+}
+
+.home .work button{
+    background: transparent;
+    border-radius: 2px;
+    padding: 10px 16px;
+    outline: none;
+    border: 2px solid #6E7DFF;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-gap: 8px;
+   margin: 2em auto 2em;
+}
+
+.home .work .block-image-one{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 20px;
+    margin-bottom: 30px;
+}
+
+.home .work .block-image-two{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 40% 60%;
+}
+
+.home .work .block-image-one div{
+    width: 100%;
+    height: 100%;
+}
+
+.home .work .block-image-two div{
+    width: 100%;
+    height: 100%;
+}
+
+.home .work .block-image-one div img,
+.home .work .block-image-two div img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.home .services{
+    width: 100%;
+    padding: 100px 70px 0;
+    background:  #141414;
+}
+
+.home .services .block-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.home .services .block-header div p:nth-child(2){
+    margin: 2em 0 0;
+    font-size: 1em;
+    color: #F7F7F7;
+}
+
+.home .services .block-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    margin-top: 5em;
+}
+
+.home .slider{
+    padding: 100px 70px 50px;
+    background:  #141414;
+    text-align: center;
+}
+
+.home .slider p:nth-child(2){
+    margin: 2em 0 0;
+    font-size: 1em;
+    color: #F7F7F7;
+}
+
+@media screen and (max-width:992px){
+    
+}
+
+@media screen and (max-width:768px){
+    .landing{
+        padding: 0 50px;
+    }
+    .home .partners{
+        padding: 100px 50px 0;
+        flex-wrap: wrap;
+        grid-gap: 1em;
+        justify-content: center;
+    }
+    .home .who-we-are{
+        padding: 100px 50px 0;
+        grid-template-columns: 55% 45%;
+        grid-column-gap: 20px;
+    }
+    .home .who-we-are .block-left .span{
+        display: block;
+        margin-bottom: 1em;
+    }
+    .home .card-container{
+        padding: 100px 50px 0;
+    }
+    .home .experience{
+        padding: 100px 50px 50px;
+    }
+    .home .work{
+        padding: 100px 50px 50px;
+    }
+    .home .services{
+        padding: 100px 50px 0;
+    }
+    .home .slider{
+        padding: 100px 50px 50px;
+    }
+    .home .services .block-card{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .block-title{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:576px){
+    .landing{
+        padding: 0 30px;
+    }
+    .home  .partners{
+        padding: 50px 30px 0;
+    }
+    .home .who-we-are{
+        padding: 100px 30px 0;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    .home .card-container{
+        padding: 100px 30px 0;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+    .home .experience{
+        padding: 100px 30px 50px;
+    }
+    .home .work{
+        padding: 100px 30px 50px;
+    }
+    .home .services{
+        padding: 100px 30px 0;
+    }
+    .home .slider{
+        padding: 100px 30px 50px;
+    }
+    .home .work p:nth-child(2){
+        width: 90%;
+    }
+    .block-title{
+        font-size: 1.7em;
+    }
+    
 }

@@ -22,3 +22,18 @@
     color: #fff;
 }
 
+@media screen and (max-width:992px){
+    .header nav{
+        grid-column-gap: 1.5em;
+    }
+}
+
+@media screen and (max-width:768px){
+    .header nav{
+       display: none;
+    }
+}
+
+@media screen and (max-width:576px){
+
+}

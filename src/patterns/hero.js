@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 //importing styles
 import '../styles/patterns/hero.css'
 
-const Hero = () => {
+export const Hero = () => {
     return (
         <div className="hero">
             <div className="layer-one">
@@ -26,4 +26,21 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export const HeroCenter = () => {
+    return (
+        <div className="hero-center">
+            <p className="hero-title">We are digital storytellers</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ut eu sociis at augue id consequat nec. Scelerisque 
+                quis tortor malesuada mattis. At sapien ipsum blandit 
+                ornare sit fames viverra. Proin sed malesuada ornare eu 
+                sagittis eu. Commodo morbi sed augue dui ornare varius 
+                dignissim. Neque mauris.
+            </p>
+            <div>
+                <button>Have a project idea?  Get in touch</button>
+                <Link>See our Work</Link>
+            </div>
+        </div>
+    )
+}
