@@ -25,3 +25,26 @@ a{
     cursor: pointer;
 }
 
+.primary-btn{
+    background: #2025EE;
+    border-radius: 2px;
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.secondary-btn{
+    border: 2px solid #6E7DFF;
+    padding: 5px 10px;
+    font-size: 1em;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    width: fit-content;
+}
+
+
+

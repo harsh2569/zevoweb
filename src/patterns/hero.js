@@ -26,10 +26,10 @@ export const Hero = () => {
     )
 }
 
-export const HeroCenter = () => {
+export const HeroCenter = ({ title, page }) => {
     return (
         <div className="hero-center">
-            <p className="hero-title">We are digital storytellers</p>
+            <p className="hero-title">{title}</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Ut eu sociis at augue id consequat nec. Scelerisque 
                 quis tortor malesuada mattis. At sapien ipsum blandit 
@@ -39,7 +39,35 @@ export const HeroCenter = () => {
             </p>
             <div>
                 <button>Have a project idea?  Get in touch</button>
-                <Link>See our Work</Link>
+               {
+                   page==="about" ? ( <Link>See our Work</Link>):null
+               }
+            </div>
+        </div>
+    )
+}
+
+export const HeroCareer = () => {
+    return (
+        <div className="hero-career">
+             <p className="hero-title">We at zevo Navigate Further, Together</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque ullamcorper tincidunt mauris dignissim 
+                  malesuada mollis purus ac. At mi massa imperdiet 
+                  scelerisque morbi vel. Eget in et vitae consectetur 
+                  arcu, felis ipsum semper venenatis. Sed proin nec
+                 libero ut dis dictumst. Lobortis.
+            </p>
+            <div className="block-input">
+                <div>
+                    <p>Job title</p>
+                    <input type="text" placeholder="Enter title" />
+                </div>
+                <div>
+                    <p>Skill</p>
+                    <input type="text" placeholder="Enter Skill" />
+                </div>
+                <button>Search jobs</button>
             </div>
         </div>
     )

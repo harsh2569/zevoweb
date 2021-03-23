@@ -6,7 +6,7 @@ import '../styles/screens/home.css'
 //importing patterns
 import Header from '../patterns/header'
 import {Hero} from '../patterns/hero'
-import Card from '../patterns/card'
+import {Card} from '../patterns/card'
 import Contact from '../patterns/contact'
 import Footer from '../patterns/footer'
 import ServiceCard from '../patterns/serviceCard'

@@ -71,7 +71,7 @@ const Footer = () => {
 
             </div>
             <div className="footer-end">
-                <p>© 2020 ZEVO CORPORATION. All rights reserved</p>
+                <p style={{textAlign:'center'}}>© 2020 ZEVO CORPORATION. All rights reserved</p>
                 <div>
                     <span>Terms & Conditions</span>
                     <span>Privacy Policy</span>

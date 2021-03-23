@@ -3,7 +3,7 @@ import React from 'react'
 //importing styles
 import '../styles/patterns/card.css'
 
-const Card = ({name,src}) => {
+export const Card = ({name,src}) => {
     return (
         <div className="card">
             <p className="card-title">{name}</p>
@@ -16,4 +16,15 @@ const Card = ({name,src}) => {
     )
 }
 
-export default Card
+export const CareerCard = ({ title, src }) => {
+    return (
+        <div className="careerCard">
+            <img src={src} alt="card" />
+            <p className="card-title">{title}</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ultrices in amet lacus, venenatis, sit eget placerat.
+                Ac sit viverra in.
+            </p>
+        </div>
+    )
+}

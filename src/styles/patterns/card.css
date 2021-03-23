@@ -27,6 +27,20 @@
     transform: translateY(50%);
 }
 
+.careerCard{
+    background: #252525;
+    padding: 20px;
+}
+
+.careerCard img{
+    width: 48px;
+    height: 48px;
+}
+
+.careerCard .card-title{
+    margin-top: 1em;
+}
+
 @media screen and (max-width:768px){
     .card .card-image{
         top: -30%;
