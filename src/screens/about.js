@@ -3,12 +3,17 @@ import React from 'react'
 import Header from '../patterns/header'
 import Footer from '../patterns/footer'
 import { HeroCenter } from '../patterns/hero'
+import { PersonCard, StaffCard, ProcessCard, ProcessCardRight } from '../patterns/card'
 
 //importing styles
 import '../styles/screens/about.css'
 
 //importing media assets
 import aboutImg from '../assets/images/about.png'
+import person1 from '../assets/cards/person1.svg'
+import person2 from '../assets/cards/person2.svg'
+import person3 from '../assets/cards/person3.svg'
+import process1 from '../assets/cards/process1.svg'
 
 const About = () => {
     return (
@@ -44,6 +49,38 @@ const About = () => {
                        Mattis purus fermentum, turpis eget sapien. Mauris est 
                        etiam enim pulvinar purus id. Libero iaculis nisi diam fuss. 
                     </p>
+                    <div className="process-card-container">
+                        <ProcessCard num="01" title="Requirements" img={process1} />
+                        <ProcessCardRight  num="02" title="DOCUMENTATION"  img={process1} />
+                        <ProcessCard num="03" title="UI & UX Design"  img={process1} />
+                        <ProcessCardRight  num="04" title="handoff & development"  img={process1}  />
+                        <ProcessCard num="05" title="ACCEPTANCE & TESTING"  img={process1} />
+                        <ProcessCardRight  num="06" title="Delivery"  img={process1} />
+                        <ProcessCard num="07" title="Support and Maintenance"  img={process1} />
+                    </div>
+                </div>
+
+                <div className="team">
+                    <p className="block-title">meet our team</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                       Mattis purus fermentum, turpis eget sapien. Mauris est 
+                       etiam enim pulvinar purus id. Libero iaculis nisi diam fuss.
+                    </p>
+                    <div className="person-card">
+                        <PersonCard title="Courtney Henry" work="Founder, Chief Executive Officer" src={person1} />
+                        <PersonCard title="Kathryn Murphy" work="Chief Technical Officer" src={person2} />
+                        <PersonCard title="Darrell Steward" work="Cheif Design Officer" src={person3} />
+                    </div>
+                    <div className="staff-card">
+                        <StaffCard title="Darlene Robertson" work="Senior Developer" src={person1} />
+                        <StaffCard title="Darlene Robertson" work="Senior Developer" src={person1} />
+                        <StaffCard title="Darlene Robertson" work="Senior Developer" src={person1} />
+                        <StaffCard title="Darlene Robertson" work="Senior Developer" src={person1} />
+                        <StaffCard title="Darlene Robertson" work="Senior Developer" src={person1} />
+                        <StaffCard title="Darlene Robertson" work="Senior Developer" src={person1} />
+                        <StaffCard title="Darlene Robertson" work="Senior Developer" src={person1} />
+                        <StaffCard title="Darlene Robertson" work="Senior Developer" src={person1} />
+                    </div>
                 </div>
             </div>
             <Footer />

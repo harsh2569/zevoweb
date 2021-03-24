@@ -58,7 +58,8 @@ const OurWork = () => {
                             <p className="block-title">Like</p>
                             <p className="block-title">What</p>
                             <p className="block-title">You See?</p>
-                            <p style={{margin:'2em 0'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            <p style={{margin:'2em 0',color:'#f7f7f7',lineHeight:'25px'}}>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                justo morbi turpis ultricies velit sit. At euismod velit
                                congue eget molestie. Dui mattis nunc varius facilisi 
                                tempus sed sit ultricies. Purus vel neque dolor at. 

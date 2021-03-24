@@ -41,6 +41,106 @@
     margin-top: 1em;
 }
 
+.PersonCard{
+    display: grid;
+    grid-gap: 1em;
+}
+
+.PersonCard .block-top{
+    width: 100%;
+    height: 100%;
+}
+
+.PersonCard .block-top img{
+    width: 100%;
+}
+
+.PersonCard .block-bottom img{
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+.process-card{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 25%;
+    place-content: space-between;
+}
+
+.process-card .block-left{
+    position: relative;
+    width: 75%;
+    background: #252525;
+    padding: 40px 20px 30px;
+}
+
+.process-card .block-left .text{
+    width: 70%;
+}
+
+.process-card .block-left .number{
+    position: absolute;
+    top: -30px;
+    left: 5%;
+    font-size: 3rem;
+}
+
+.process-card .block-left > .process-img{
+    position: absolute;
+    top:50%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+.process-card-two{
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 50%;
+    place-content: space-between;
+}
+
+.process-card-two .block-right{
+    position: relative;
+    width: 75%;
+    background: #252525;
+    padding: 40px 20px 30px;
+}
+
+.process-card-two .block-right > .text{
+    width: 70%;
+    color: #f7f7f7;
+    line-height: 25px;
+}
+
+.process-card-two .block-right .number{
+    position: absolute;
+    top: -30px;
+    left: 5%;
+    font-size: 3rem;
+}
+
+.process-card-two .block-right .process-img{
+    position: absolute;
+    top:50%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+.process-card .right-arrow{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+
+.process-card-two .left-arrow{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+
 @media screen and (max-width:768px){
     .card .card-image{
         top: -30%;

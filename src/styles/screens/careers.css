@@ -29,6 +29,11 @@
     grid-gap: 1em;
 }
 
+.career .life .block-left > p:nth-child(2),
+.career .life .block-left > p:nth-child(3){
+    line-height: 25px;
+    color: #f7f7f7;
+}
 .career .life .block-right{
     width: 100%;
     height: 100%;
@@ -67,6 +72,7 @@
 .career .values > p:nth-child(2){
     width: 80%;
     margin: 1em auto 2em;
+    color: #f7f7f7;
 }
 
 .career .values .wrapper{
