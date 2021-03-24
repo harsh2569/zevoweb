@@ -160,6 +160,8 @@ const Home = () => {
                 <Contact />
             </div>
 
+            <div className="line"><p></p></div>
+
             <Footer />
 
         </div>

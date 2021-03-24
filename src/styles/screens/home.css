@@ -227,6 +227,16 @@
     color: #F7F7F7;
 }
 
+.line{
+    padding: 0 70px;
+    background: #000;
+}
+
+.line p{
+    height: 1px;
+    background-color: rgba(255,255,255,0.5);
+}
+
 @media screen and (max-width:992px){
     
 }
@@ -272,6 +282,9 @@
     .block-title{
         font-size: 2em;
     }
+    .line{
+        padding: 0 50px;
+    }
 }
 
 @media screen and (max-width:576px){
@@ -308,6 +321,9 @@
     }
     .block-title{
         font-size: 1.7em;
+    }
+    .line{
+        padding: 0 30px;
     }
     
 }

@@ -120,6 +120,7 @@ const Careers = () => {
                 </div>
 
             </div>
+            <div className="line"><p></p></div>
             <Footer />
         </>
     )
