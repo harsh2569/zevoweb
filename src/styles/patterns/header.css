@@ -13,6 +13,7 @@
 
 .header .menu{
     display: none;
+    cursor: pointer;
 }
 
 .header nav{

@@ -64,6 +64,10 @@
     grid-column-gap: 2em;
 }
 
+.footer .footer-end div span{
+    cursor: pointer;
+}
+
 .social-icons img{
     cursor: pointer;
 }
@@ -97,7 +101,7 @@
     .footer .footer-end div{
         display: flex;
         align-items: center;
-        grid-column-gap: 1em;
+        grid-column-gap: 0.7em;
         justify-content: space-between;
     }
 }

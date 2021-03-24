@@ -127,8 +127,9 @@
     .career .career-landing{
         padding: 0 50px;
     }
-    .career .life{
+    .career .life {
         padding: 100px 50px 50px;
+        grid-template-columns: 1fr;
     }
     .career .values{
         padding: 50px 50px;
