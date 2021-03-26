@@ -7,7 +7,8 @@ const ServiceCard = ({ name, src, type }) => {
     return (
         <div className="service-card" style={{
             flexDirection:type==="inverse"?'column-reverse':'column'
-        }}>
+        }}
+        >
             <div>
                 <p className="card-title">{name}</p>
                 <p>Lorem ipsum dolor sit amet elit consectetur adipiscing 

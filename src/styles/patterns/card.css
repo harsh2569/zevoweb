@@ -140,12 +140,47 @@
     right: 50%;
 }
 
+.work-card{
+    background: #252525;
+    padding: 30px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.work-card .card-link{
+    font-size: 16px;
+    padding: 10px;
+    margin: 1em 0;
+    width: fit-content;
+}
+
+.work-card .title{
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+.work-card .workcard-image{
+    position: relative;
+    width: 70%;
+    height: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.work-card .workcard-image img{
+   margin-right: 0;
+   width: 100%;
+}
 
 @media screen and (max-width:768px){
     .card .card-image{
         top: -30%;
         left: 50%;
         transform: translateX(-50%);
+    }
+    .work-card .workcard-image{
+        width: 50%;
     }
 }
 

@@ -1,5 +1,6 @@
 .home{
     width: 100%;
+    overflow: hidden;
 }
 
 .block-title{
@@ -76,6 +77,8 @@
 .home .who-we-are .block-right .map-image{
     width: 100%;
     height: 100%;
+    display: grid;
+    place-items: center;
 }
 
 .home .who-we-are .block-right .map-image img{
@@ -132,12 +135,12 @@
     padding: 100px 70px 50px;
 }
 
-.home .work p:nth-child(1),
-.home .work p:nth-child(2){
+.home .work > p:nth-child(1),
+.home .work > p:nth-child(2){
     text-align: center;
 }
 
-.home .work p:nth-child(2){
+.home .work > p:nth-child(2){
     margin: 2em auto 0;
     font-size: 1em;
     color: #F7F7F7;
@@ -173,21 +176,6 @@
     grid-template-columns: 40% 60%;
 }
 
-.home .work .block-image-one div{
-    width: 100%;
-    height: 100%;
-}
-
-.home .work .block-image-two div{
-    width: 100%;
-    height: 100%;
-}
-
-.home .work .block-image-one div img,
-.home .work .block-image-two div img{
-    object-fit: cover;
-    width: 100%;
-}
 
 .home .services{
     width: 100%;
@@ -200,6 +188,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1em;
+    grid-gap: 1em;
 }
 
 .home .services .block-header div p:nth-child(2){
@@ -215,7 +204,7 @@
     margin-top: 5em;
 }
 
-.home .slider{
+.home .slider-block{
     padding: 100px 70px 50px;
     background:  #141414;
     text-align: center;
@@ -238,7 +227,10 @@
 }
 
 @media screen and (max-width:992px){
-    
+    .home .who-we-are .block-left .span{
+        display: block;
+        margin-bottom: 1em;
+    }
 }
 
 @media screen and (max-width:768px){
@@ -285,6 +277,10 @@
     .line{
         padding: 0 50px;
     }
+    .home .work .block-image-one,
+    .home .work .block-image-two{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width:576px){
@@ -316,7 +312,7 @@
     .home .slider{
         padding: 100px 30px 50px;
     }
-    .home .work p:nth-child(2){
+    .home .work > p:nth-child(2){
         width: 90%;
     }
     .block-title{

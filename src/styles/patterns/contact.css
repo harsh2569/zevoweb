@@ -45,6 +45,26 @@
     opacity: 0.5;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.contact .input-group select{
+    background: #141414;
+}
+
+.contact .input-group select option{
+    color: #f7f7f7;
+}
+
 .contact .block-end{
     display: flex;
     justify-content: space-between;

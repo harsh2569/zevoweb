@@ -1,4 +1,8 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
+
+//Importing animation
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 //importing styles
 import '../styles/patterns/footer.css'
@@ -16,16 +20,26 @@ import twitter from '../assets/icons/twitter.svg'
 import linkedin from '../assets/icons/linkedin.svg'
 
 const Footer = () => {
+
+    useEffect(() => {
+        Aos.init({duration:1000})
+    },[])
+
     return (
         <div className="footer">
             <div className="footer-block">
                 <div className="block-one">
-                    <img  src={logo} alt="logo" className="logo" style={{marginBottom:'1em'}} />
+                    <img  
+                        src={logo} alt="logo" 
+                        className="logo" 
+                        style={{marginBottom:'1em'}} 
+                        data-aos="flip-right" 
+                    />
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                        Condimentum vitae elit blandit massa, habitasse ornare.
                        Penatibus eget volutpat facilisi cursus nunc, feugiat id at. 
                     </p>
-                    <div className="social-icons">
+                    <div className="social-icons" data-aos="fade-up">
                         <img src={facebook} alt="facebook" />
                         <img src={instagram} alt="instagram" />
                         <img src={twitter} alt="twitter" />
@@ -39,7 +53,13 @@ const Footer = () => {
                         <li>Blogs</li>
                         <li>Our work</li>
                         <li>FAQs</li>
-                        <li>Careers <span style={{color:'#6E7DFF',fontSize:14,marginLeft:10}}> We are hiring</span></li>
+                        <li>Careers 
+                            <span 
+                                style={{color:'#6E7DFF',fontSize:14,marginLeft:10}}
+                            > 
+                                We are hiring
+                            </span>
+                        </li>
                     </ul>
                 </div>
                 <div className="block-three">

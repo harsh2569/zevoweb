@@ -1,4 +1,7 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 import Header from '../patterns/header'
 import Footer from '../patterns/footer'
@@ -16,6 +19,11 @@ import person3 from '../assets/cards/person3.svg'
 import process1 from '../assets/cards/process1.svg'
 
 const About = () => {
+
+    useEffect(() => {
+        Aos.init({duration:1000})
+    },[])
+
     return (
         <>
             <div className="about">
