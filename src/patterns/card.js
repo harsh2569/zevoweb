@@ -12,6 +12,8 @@ import twitter from '../assets/icons/twitter.svg'
 import linkedin from '../assets/icons/linkedin.svg'
 import leftarrow from '../assets/icons/left-arrow.svg'
 import rightarrow from '../assets/icons/right-arrow.svg'
+import mobrightarrow from '../assets/icons/mobrightarrow.svg'
+
 import { Link } from 'react-router-dom'
 
 export const Card = ({name,src}) => {
@@ -79,7 +81,7 @@ export const StaffCard = ({ title, src, work}) => {
 
 export const ProcessCard = ({ title, num, img }) => {
     return (
-        <div className="process-card" data-aos="fade-right">
+        <div className="process-card">
             <div className="block-left">
                 <span className="number">{num}</span>
                 <p className="card-title">{title}</p>
@@ -98,6 +100,7 @@ export const ProcessCard = ({ title, num, img }) => {
                 </p>
             </div>
            <img src={rightarrow} alt="rightarrow" className="right-arrow" />
+           <img src={mobrightarrow} alt="rightarrow" className="mob-right-arrow" />
         </div>
         
     )
@@ -105,7 +108,7 @@ export const ProcessCard = ({ title, num, img }) => {
 
 export const ProcessCardRight = ({ title, num, img }) => {
     return (
-        <div className="process-card-two" data-aos="fade-left">
+        <div className="process-card-two">
             <div className="block-left">
                 <p style={{color:'#f7f7f7',lineHeight:'25px'}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -124,6 +127,7 @@ export const ProcessCardRight = ({ title, num, img }) => {
                 <img src={img} alt="process" className="process-img" />
             </div>
             <img src={leftarrow} alt="leftarrow" className="left-arrow" />
+            <img src={mobrightarrow} alt="rightarrow" className="mob-left-arrow" />
         </div>
         
     )

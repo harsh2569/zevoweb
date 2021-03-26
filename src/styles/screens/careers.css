@@ -171,4 +171,12 @@
     .career .job table th{
         font-size: 12px;
     }
+    .career .job table td:nth-child(3),.career .job table td:nth-child(4)
+    ,.career .job table th:nth-child(3),.career .job table th:nth-child(4){
+        display: none;
+    }
+    .career .job table td:nth-child(5){
+        font-size: 14px;
+        letter-spacing: 0.05em;
+    }
 }

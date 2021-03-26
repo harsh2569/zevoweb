@@ -49,6 +49,7 @@ const Home = () => {
 
 
     return (
+        <>
         <div className="home">
 
             <div className="landing">
@@ -191,6 +192,7 @@ const Home = () => {
             <Footer />
 
         </div>
+        </>
     )
 }
 

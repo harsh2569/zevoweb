@@ -321,5 +321,10 @@
     .line{
         padding: 0 30px;
     }
-    
+    .home .experience .block{
+        grid-template-columns: 1fr 1fr;
+    }
+    .home .experience .block > div:nth-child(2){
+        border-right: none;
+    }
 }

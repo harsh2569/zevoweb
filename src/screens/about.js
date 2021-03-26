@@ -17,6 +17,7 @@ import person1 from '../assets/cards/person1.svg'
 import person2 from '../assets/cards/person2.svg'
 import person3 from '../assets/cards/person3.svg'
 import process1 from '../assets/cards/process1.svg'
+import story from '../assets/images/story.svg'
 
 const About = () => {
 
@@ -47,7 +48,7 @@ const About = () => {
                         <button>Have a project idea?  Get in touch</button>
                     </div>
                     <div className="video">
-
+                        <img src={story} alt="story" />
                     </div>
                 </div>
 

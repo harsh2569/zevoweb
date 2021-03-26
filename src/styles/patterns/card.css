@@ -140,6 +140,10 @@
     right: 50%;
 }
 
+.process-card .mob-right-arrow,.process-card-two .mob-left-arrow{
+    display: none;
+}
+
 .work-card{
     background: #252525;
     padding: 30px;
@@ -182,6 +186,30 @@
     .work-card .workcard-image{
         width: 50%;
     }
+    .process-card .block-right,
+    .process-card-two .block-left{
+        display: none;
+    }
+    .process-card,.process-card-two{
+        grid-template-columns: 100%;
+    }
+    .process-card .right-arrow,
+    .process-card-two .left-arrow{
+        display: none;
+    }
+    .process-card .mob-right-arrow{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        display: block;
+    }
+    .process-card-two .mob-left-arrow{
+        transform: scale(-1,1);
+        position: absolute;
+        left: -5%;
+        top: 50%;
+        display: block;
+    }
 }
 
 @media screen and (max-width:576px){
@@ -189,5 +217,27 @@
         top: -25%;
         right: 5%;
         transform: translateX(0%);
+    }
+    .process-card .block-left,
+    .process-card-two .block-right{
+        width: 100%;
+    }
+    .process-card .block-left > .process-img{
+        left: 80%;
+    }
+    .process-card .block-left > .process-img,
+    .process-card-two .block-right .process-img{
+        left: 80%;
+    }
+    .process-card .block-left > .text,
+    .process-card-two .block-right .text{
+        width: 50%;
+    }
+    .process-card .mob-right-arrow{
+        right: -5%;
+    }
+    .process-card .mob-right-arrow,
+    .process-card-two .mob-left-arrow{
+        top: 60%;
     }
 }
