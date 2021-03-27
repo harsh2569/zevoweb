@@ -81,7 +81,7 @@ export const StaffCard = ({ title, src, work}) => {
 
 export const ProcessCard = ({ title, num, img }) => {
     return (
-        <div className="process-card">
+        <div className="process-card" data-aos="fade-up">
             <div className="block-left">
                 <span className="number">{num}</span>
                 <p className="card-title">{title}</p>
@@ -108,7 +108,7 @@ export const ProcessCard = ({ title, num, img }) => {
 
 export const ProcessCardRight = ({ title, num, img }) => {
     return (
-        <div className="process-card-two">
+        <div className="process-card-two" data-aos="fade-up">
             <div className="block-left">
                 <p style={{color:'#f7f7f7',lineHeight:'25px'}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -142,7 +142,14 @@ export const WorkCard = ({ title, work, src, bgcolor, fcolor}) => {
                 amet.  Lorem ipsum dolor sit amet, consectetur 
                 adipiscing elit.
             </p>
-           <p className="card-link" style={{background:`${bgcolor}`,color:`${fcolor}`}}><Link to="/" style={{color:`${fcolor}`}}>Case study</Link></p>
+           <p 
+                className="card-link" 
+                style={{background:`${bgcolor}`,color:`${fcolor}`}}
+            >
+                <Link to="/" style={{color:`${fcolor}`}}>
+                    Case study
+                </Link>
+            </p>
             <div className="workcard-image">
                 <img src={src} alt="brand" />
             </div>

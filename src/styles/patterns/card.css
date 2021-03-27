@@ -200,14 +200,14 @@
     .process-card .mob-right-arrow{
         position: absolute;
         right: 0;
-        top: 50%;
+        top: 60%;
         display: block;
     }
     .process-card-two .mob-left-arrow{
         transform: scale(-1,1);
         position: absolute;
         left: -5%;
-        top: 50%;
+        top: 60%;
         display: block;
     }
 }
@@ -228,6 +228,7 @@
     .process-card .block-left > .process-img,
     .process-card-two .block-right .process-img{
         left: 80%;
+        width: 50%;
     }
     .process-card .block-left > .text,
     .process-card-two .block-right .text{

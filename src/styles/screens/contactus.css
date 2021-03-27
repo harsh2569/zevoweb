@@ -1,3 +1,7 @@
+.contactus{
+    overflow: hidden;
+}
+
 .contactus .contact-header{
     padding-left: 70px;
     padding-right: 70px;

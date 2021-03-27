@@ -34,8 +34,8 @@ const About = () => {
                     <HeroCenter title="We are digital storytellers" page="about" />
                 </div>
 
-                <div className="story">
-                    <div>
+                <div className="story" >
+                    <div data-aos="zoom-out">
                         <p className="block-title">and this is our story...</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Mattis purus fermentum, turpis eget sapien. Mauris est 
@@ -47,7 +47,7 @@ const About = () => {
                         </p>
                         <button>Have a project idea?  Get in touch</button>
                     </div>
-                    <div className="video">
+                    <div className="video" data-aos="zoom-in">
                         <img src={story} alt="story" />
                     </div>
                 </div>

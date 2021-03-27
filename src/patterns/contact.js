@@ -4,6 +4,9 @@ import * as emailjs from 'emailjs-com';
 //importing styles
 import '../styles/patterns/contact.css'
 
+//Importing notification package
+import { toast } from 'react-toastify'
+
 //importing media assets
 import hello from '../assets/icons/hello.svg'
 
@@ -31,13 +34,23 @@ const Contact = () => {
 
     function validate(){
         console.log(formData.username,formData.email,formData.mobileno)
-        if(formData.username==="" || formData.mobileno==="" || formData.email==="") return false;
-        return true
+        if(formData.username==="" || formData.mobileno==="" || formData.email===""){
+            toast.error("please fill the empty fields");
+            return false; 
+        } 
+        return true;
     }
     const handleSubmit = (e) => {
         e.preventDefault();
         const res=validateEmail(formData.email)
         const val=validate(formData)
+
+        //if email id is invalid
+        if(formData.email!==""){
+            if(!res) toast.error("Invalid Email Address")
+        }
+
+
         if(res && val){
 
             const {username,work,place,category,duration,amount,email,mobileno}=formData;
@@ -48,8 +61,15 @@ const Contact = () => {
 
             emailjs.send('zevocorp_service', 'template_2bco5dd', templateParams , 'user_pA3AcBwuZrONMUHbSNCIo')
             .then((result) => {
+                toast.dark(
+                    <div>
+                        <p style={{marginBottom:8}}>Thanks for contacting us</p>
+                        <p>We will meet you soon</p>
+                    </div>
+                )
                 setFormData(initailState)
             }, (error) => {
+                toast.error("Something went wrong")
                 setFormData(initailState)
             });
            
@@ -64,6 +84,7 @@ const Contact = () => {
     return (
         <>
         <div className="contact">
+
             <p className="block-title">Get in touch with us</p>
             <p style={{margin:'1em 0'}}>Send us a message, get a quote from us.</p>
             <li><img src={hello} alt="hello" /><span>Hello folks at ZEVO Corporation!</span></li>
